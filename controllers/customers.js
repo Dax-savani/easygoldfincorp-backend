@@ -3,17 +3,17 @@ const Inquiry = require("../models/Contact");
 const joi = require("joi");
 
 const userSchema = joi.object({
-  firstName: joi.string().alphanum().required(),
-  lastName: joi.string().required(),
-  email: joi.string().email().required(),
-  PhoneNo: joi.string().required(),
-  country: joi.string().required(),
-  pincode: joi.string().required(),
-  State: joi.string().required(),
-  city: joi.string().required(),
-  address: joi.string().required(),
-  service: joi.string().required(),
-  message: joi.string().required(),
+  firstName: joi.string().alphanum(),
+  lastName: joi.string(),
+  email: joi.string().email(),
+  PhoneNo: joi.string(),
+  country: joi.string(),
+  pincode: joi.string(),
+  State: joi.string(),
+  city: joi.string(),
+  address: joi.string(),
+  service: joi.string(),
+  message: joi.string(),
 });
 
 const inquirySchema = joi.object({
