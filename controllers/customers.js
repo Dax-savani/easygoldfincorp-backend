@@ -3,7 +3,7 @@ const Inquiry = require("../models/Contact");
 const joi = require("joi");
 
 const userSchema = joi.object({
-  firstName: joi.string().alphanum(),
+  firstName: joi.string(),
   lastName: joi.string(),
   email: joi.string().email(),
   PhoneNo: joi.string(),
@@ -17,7 +17,7 @@ const userSchema = joi.object({
 });
 
 const inquirySchema = joi.object({
-  name: joi.string().alphanum(),
+  name: joi.string(),
   email: joi.string().email(),
   contact: joi.string(),
   country: joi.string(),
