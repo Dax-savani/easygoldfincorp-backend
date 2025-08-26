@@ -5,7 +5,7 @@ const cors = require("cors");
 const userRouter = require("./routes/Users");
 require("dotenv").config();
 app.use(cors());
-//
+
 dbcoection();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
